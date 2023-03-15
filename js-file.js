@@ -20,6 +20,9 @@ const grid = document.getElementById("grid");
     
  }
 
+ // onMouseHover ---> onMouseOut 
+ 
+
 
 
 
