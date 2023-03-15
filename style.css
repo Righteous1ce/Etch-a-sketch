@@ -1,4 +1,7 @@
-#container {
+
+
+
+/*#container {
     position: relative;
 	top: 30px;
 	font-size: 0;
@@ -10,11 +13,19 @@
 	width:960px;
     display: grid;
     
-}
+}*/
 
 
-.container {
+/*.container {
     display: grid;
     grid-template-columns: 20% 20% 20%;
     grid-template-rows: 3em 1.6em 1.6em;
+    color: black;
+}*/
+
+#grid {
+    display: grid;
+   
+
+    
 }
