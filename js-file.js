@@ -20,9 +20,21 @@ const grid = document.getElementById("grid");
  }
 
  jQuery(".cell").hover(function(){ // calls the cell
-    jQuery(this).css("background-color", "yellow");
+    jQuery(this).css("background-color", "#154360");
  });
 
+ function openPopup() {
+   document.getElementById("myPopup").style.display = "block";
+ }
+ 
+ function closePopup() {
+   document.getElementById("myPopup").style.display = "none";
+ }
+
+
+//document.getElementById("click me").onclick = function click(){
+
+//}
 
 
 

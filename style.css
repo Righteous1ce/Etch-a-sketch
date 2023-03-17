@@ -1,21 +1,4 @@
 
-
-
-/*#container {
-    position: relative;
-	top: 30px;
-	font-size: 0;
-	margin:auto;
-	padding: 0;
-	border: none;
-    background-color: blue;
-    height:960px;
-	width:960px;
-    display: grid;
-    
-}*/
-
-
 #grid {
     display: grid;
     justify-content: center;
@@ -25,4 +8,60 @@
 }
 
 
+.popup { /* hidden by default*/
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
 
+.open-button {
+    display: flex;
+    background-color: #154360;
+    color: #f1f1f1;
+    padding: 10px;
+    border-radius: 1em;
+    cursor: pointer;
+    
+}
+
+.popup-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+
+}
+
+.popup-container input[type=text], .popup-container input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.popup-container input[type=text]:focus, .popup-container input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.popup-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+
+  .popup-container .cancel {
+    background-color: red;
+  }
+
+  .popup-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
