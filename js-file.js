@@ -8,6 +8,7 @@ const grid = document.getElementById("grid");
 
     
     const cell = document.createElement("div");
+    cell.classList.add("cell"); // Targets the individual cell
     cell.style.width = `${cellSize}px`;
     cell.style.height = `${cellSize}px`;
     cell.style.border = "1px solid black";
@@ -18,15 +19,11 @@ const grid = document.getElementById("grid");
     
  }
 
- jQuery("div").hover(function(){
+ jQuery(".cell").hover(function(){ // calls the cell
     jQuery(this).css("background-color", "yellow");
- }, function(){
-    jQuery(this).css("background-color", "pink");
-
  });
 
- // onMouseHover ---> onMouseOut though maybe not onMouseOut
- //because we want to leave a trail like a pen 
+
 
 
 
