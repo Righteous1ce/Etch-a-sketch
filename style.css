@@ -1,10 +1,27 @@
+/* Style for the entire grid */
 #grid {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(16, 20px);
     grid-template-rows: repeat(16, 20px);
     grid-column-gap: 0px;
-}
+  }
+  
+  /* Style for each row */
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cell {
+    background-color: white;
+    border: 1px solid black;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  
+    
 
 
 .popup { /* hidden by default*/
