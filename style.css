@@ -26,20 +26,22 @@
 
 .open-button {
     display: flex;
-    background-color: #154360;
+    background-color: #3882F6;
+    font-family: 'Open Sans', sans-serif;
     color: #f1f1f1;
-    padding: 10px;
+    opacity: 0.8;
+    padding: 15px;
+    border: none;
     border-radius: 1em;
     cursor: pointer;
+    
     
 }
 
 .popup-container {
-    
     max-width: 300px;
     padding: 10px;
     background-color: white;
-
 }
 
 .popup-container input[type=text], .popup-container input[type=text] {
@@ -57,7 +59,7 @@
 }
 
 .popup-container .btn {
-    background-color: #04AA6D;
+    background-color:  #3882F6;
     color: white;
     padding: 16px 20px;
     border: none;

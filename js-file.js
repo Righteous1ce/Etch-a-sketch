@@ -20,7 +20,7 @@ const grid = document.getElementById("grid");
  }
 
  jQuery(".cell").hover(function(){ // calls the cell
-    jQuery(this).css("background-color", "#154360");
+    jQuery(this).css("background-color", "#3882F6");
  });
 
  function openPopup() {
