@@ -8,16 +8,17 @@
         
     </head>
     <body>
-        <button class ="open-button" onClick="openPopup()">Grid Size Selector</button>
+        <button class ="open-button" onclick="openPopup()">Grid Size Selector</button>
 
         <div class="popup" id="myPopup">
-            <form action="/action_page.php" class="popup-container">
+            <form class="popup-container">
+
                 <h1>Type a Grid Size</h1>
                 <label>Width</label>
-                <input type="text" placeholder="16" required>
+                <input type="text" placeholder="16" name ="width" required>
                 
                 <label>Height</label>
-                <input type="text" placeholder="16" required>
+                <input type="text" placeholder="16" name ="height" required>
 
                 <button type="submit" class="btn">Submit</button>
                 <button type="button" class="btn cancel" onclick="closePopup()">Close</button>
