@@ -24,17 +24,27 @@ const grid = document.getElementById("grid");
  });
 
  function openPopup() {
-   document.getElementById("myPopup").style.display = "block";
+   document.getElementById("myPopup").classList.add("popup-open");
+   popup.style.display = "block";
+   
  }
  
  function closePopup() {
-   document.getElementById("myPopup").style.display = "none";
+   document.getElementById("myPopup").classList.remove("popup-open");
+   popup.style.display = "none";
  }
 
 
 //document.getElementById("click me").onclick = function click(){
 
 //}
+
+
+
+
+
+
+
 
 
 
