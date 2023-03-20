@@ -1,8 +1,11 @@
 let gridSize = 16;
-let cellSize = 20;
+let cellSize = Math.floor(600 / gridSize); 
+// the default cell sizing is wrong compared to the rest
 
 const grid = document.getElementById("grid");
 
+grid.style.gridTemplateColumns = `repeat(${gridSize}, ${cellSize}px)`;
+grid.style.gridTemplateRows = `repeat(${gridSize}, ${cellSize}px)`;
 
 for (let i = 0; i < gridSize * gridSize; i++) {
   const cell = document.createElement("div");
