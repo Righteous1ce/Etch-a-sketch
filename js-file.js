@@ -19,6 +19,7 @@ for (let i = 0; i < gridSize * gridSize; i++) {
 
 jQuery(".cell").hover(function() {
   jQuery(this).css("background-color", "#3882F6");
+    
 });
 
 
@@ -26,6 +27,13 @@ function updateGridSize() {
   const width = parseInt(document.querySelector('input[name="width"]').value);
   const height = parseInt(document.querySelector('input[name="height"]').value);
   if (!width || !height) return;
+  const gridSize = Math.min(width, height);
+  if (gridSize > 100) {
+    alert("Grid size cannot be higher than 100");
+    return;
+  }
+
+
   gridSize = Math.min(width, height);
   cellSize = Math.floor(600 / gridSize);
   grid.style.gridTemplateColumns = `repeat(${gridSize}, ${cellSize}px)`;
@@ -41,13 +49,23 @@ function updateGridSize() {
   }
   jQuery(".cell").hover(function() {
     jQuery(this).css("background-color", "#3882F6");
-  });
-}
+    
+      })
+    };
+
 
 
 function openPopup() {
   document.getElementById("myPopup").classList.add("popup-open");
 }
+/*
+const inputField = document.querySelector('input[name="myInput"]');
+inputField.addEventListener('input', function() {
+  if (parseInt(this.value) > 100) {
+    this.value = '100';
+  }
+});
+*/
 
 
 function closePopup() {
