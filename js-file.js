@@ -1,6 +1,6 @@
 let gridSize = 16;
 let cellSize = Math.floor(600 / gridSize); 
-// the default cell sizing is wrong compared to the rest
+
 
 const grid = document.getElementById("grid");
 
@@ -23,18 +23,18 @@ jQuery(".cell").hover(function() {
 });
 
 
+
+
 function updateGridSize() {
   const width = parseInt(document.querySelector('input[name="width"]').value);
   const height = parseInt(document.querySelector('input[name="height"]').value);
   if (!width || !height) return;
-  const gridSize = Math.min(width, height);
+  let gridSize = Math.min(width, height);
   if (gridSize > 100) {
     alert("Grid size cannot be higher than 100");
     return;
   }
 
-
-  gridSize = Math.min(width, height);
   cellSize = Math.floor(600 / gridSize);
   grid.style.gridTemplateColumns = `repeat(${gridSize}, ${cellSize}px)`;
   grid.style.gridTemplateRows = `repeat(${gridSize}, ${cellSize}px)`;
@@ -49,23 +49,17 @@ function updateGridSize() {
   }
   jQuery(".cell").hover(function() {
     jQuery(this).css("background-color", "#3882F6");
-    
-      })
-    };
+  });
+};
+
 
 
 
 function openPopup() {
   document.getElementById("myPopup").classList.add("popup-open");
 }
-/*
-const inputField = document.querySelector('input[name="myInput"]');
-inputField.addEventListener('input', function() {
-  if (parseInt(this.value) > 100) {
-    this.value = '100';
-  }
-});
-*/
+
+
 
 
 function closePopup() {
@@ -79,21 +73,6 @@ document.querySelector('form').addEventListener('submit', function(event) {
   closePopup();
 });
 
-
-
-
- 
-
-
- //input will change grid size 
- //but not the px size of the grid
-
- // the grid size and cell size might need
- // changing as 
-
-//document.getElementById("click me").onclick = function click(){
-
-//}
 
 
 
